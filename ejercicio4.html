@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .button {
+    width: 100%;
+  }
+  .container {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 320px) {
+    .container {
+      background-color: beige;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .button {
+      width: 200px;
+      background-color: cornflowerblue;
+      border: none;
+      border-radius: 12px;
+      height: 50px;
+      cursor: pointer;
+    }
+  }
+</style>
+<body>
+  <div class="container">
+    <h1 class="title">Title</h1>
+    <p class="paragraph">soy la descripcion de este elemento</p>
+    <button class="button">click me</button>
+  </div>
+</body>
+</html>
